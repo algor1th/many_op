@@ -4,7 +4,7 @@
 /// Negate all passed variables
 /// # Example
 ///  ```
-/// use many_op::{negate,do_for};
+/// use many_op::negate;
 /// let mut testvals = [true, false, true];
 /// negate! {
 ///     testvals[0];
@@ -14,7 +14,7 @@
 /// ```
 macro_rules! negate {
     ($($e:expr;)*) => {
-        do_for!(unary !, $($e;)*)
+        $crate::do_for!(unary !, $($e;)*)
     };
 }
 #[macro_export]
