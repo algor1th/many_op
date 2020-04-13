@@ -1,0 +1,12 @@
+[package]
+name = "many_op"
+version = "0.1.0"
+authors = ["Lenny Händler <lenny@lennyhaendler.com>"]
+edition = "2018"
+
+description = "do an operation on many variables"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
